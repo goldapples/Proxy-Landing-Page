@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 120) {
+    if (window.scrollY > 180) {
       setScrolling(true);
     } else {
       setScrolling(false);
