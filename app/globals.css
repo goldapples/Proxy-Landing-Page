@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto max-w-full;
+  }
+
+  .padding-container {
+    @apply px-14;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .navbar-scroll {
+    background: rgba(255,255,255, 0.9); /* Set your desired background color */
+    width: 100vw;
+  }
+
+  .text_pink {
+    @apply text-[#F85E9F]
+  }
+
+  .text_orange {
+    @apply text-[#FF5722]
+  }
+
+  .text_black {
+    @apply text-[#191825]
+  }
+
+
+
+  .btn_purple {
+    @apply bg-[#5D50C6] px-8 py-3 text-white transition-all hover:bg-opacity-50
+  }
+
+  .btn_outline_black {
+    @apply border-black border-opacity-20 px-4 py-3
+  }
+
+  .btn_white {
+    @apply border-none px-4 py-3
+  }
+
+  .bold-16 {
+    @apply text-[16px] font-[600];
+  }
+
+  .bg-hero {
+    background-image: url('/earth.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    /*@apply absolute right-0 top-0 h-screen w-screen bg-cover bg-center md:right-[-15%] xl:top-[-10%];*/
+  }
+
+  .bg-testimonial {
+    background: url('/bg-testimonial.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+}
+
+@layer base {
+  /* Optionally apply the font globally */
+  body {
+    font-family: 'Lexend', sans-serif;
+  }
+}
+.newsletter {
+  letter-spacing: 3px;
+}
+
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.shadow-2 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.gradient-purple {
+  background: rgb(248,94,159);
+  background: linear-gradient(50deg, rgba(248,94,159,1) 0%, rgba(93,80,198,1) 100%);
+}
+
+/* Hero */
+.circle-pink {
+  width: 700px;
+  height: 700px;
+  border-radius: 30%;
+  position: absolute;
+  transform: rotate(50deg);
+  background: rgb(255,211,198);
+  background: linear-gradient(90deg, rgba(255,211,198,1) 0%, rgba(255,87,34,0.19380252100840334) 22%, rgba(255,255,255,0) 100%);
+
+}
+
+.circle-yellow {
+  width: 600px;
+  height: 600px;
+  border-radius: 40%;
+  position: absolute;
+  transform: rotate(-120deg);
+  background: rgb(255,242,201);
+  background: linear-gradient(50deg, rgba(255,242,201,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #5D50C6 !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
